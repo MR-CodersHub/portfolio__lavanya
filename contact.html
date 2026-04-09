@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Dinesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav id="navbar" class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">Dinesh<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" class="btn-contact active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content" style="padding-top: 120px;">
+        <section class="contact section">
+            <div class="container">
+                <h2 class="section-title text-center">Let's Connect</h2>
+                <div class="contact-grid grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p style="margin-bottom: 2rem; color: var(--text-muted);">Feel free to reach out to me for internship opportunities, collaborations, or just a friendly tech talk!</p>
+                        
+                        <div class="info-item">
+                            <div class="icon-box"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@dinesh.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bangalore, Karnataka, India</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links" style="margin-top: 3rem;">
+                            <a href="#" title="GitHub"><i data-lucide="github"></i></a>
+                            <a href="#" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" title="Twitter"><i data-lucide="twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form glass-container">
+                        <form id="portfolio-contact">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Project details, inquiry, or just hi!" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary block">Send Message <i data-lucide="send"></i></button>
+                        </form>
+                        <div id="form-status" class="form-status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2024 Dinesh | Designed with professional elegance and modern interactions.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
