@@ -14,7 +14,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -24,25 +24,27 @@
 </head>
 
 <body>
-    <div class="bg-pattern-circles"></div>
-
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="container">
             <a href="#home" class="logo">
-                <i data-lucide="zap"></i>
-                <span>LAVANYA</span>
+                LAVANYA<span style="color: var(--primary);">.</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#home" class="active">HOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#resume">RESUME</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#services">SERVICES</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-            <div class="nav-actions flex">
-                <a href="#contact" class="btn btn-primary nav-cta">LET'S TALK</a>
+            <div class="nav-actions">
+                <div class="social-top">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
                 <button id="mobile-toggle" class="mobile-toggle">
                     <i data-lucide="menu"></i>
                 </button>
@@ -51,77 +53,127 @@
     </nav>
 
     <main class="page-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+        <!-- Home Section -->
+        <section id="home" class="section hero">
             <div class="container grid">
-                <div class="hero-content">
-                    <span class="hero-subtitle">Student & Developer</span>
-                    <h1>HAY! I'M <span>LAVANYA</span><br>I'M A DEVELOPER |</h1>
-                    <p>I specialize in building high-end, responsive web applications with a focus on clean logic and
-                        elegant user experiences. Currently pursuing my BCA, I blend academic excellence with
-                        professional technical expertise.</p>
+                <div class="hero-content reveal-hidden">
+                    <span class="hero-subtitle">BCA Student & Web Developer</span>
+                    <h1>Crafting Digital<br><span>Experiences</span></h1>
+                    <p>I am a dedicated BCA Student and aspiring Web Developer specializing in creating high-end,
+                        responsive digital experiences. I blend academic knowledge with technical expertise to build
+                        scalable and user-centric applications.</p>
                     <div class="hero-btns flex">
-                        <a href="#contact" class="btn btn-primary">GET IN TOUCH <i data-lucide="arrow-right"></i></a>
-                        <div class="social-mini flex" style="margin-left: 1rem;">
-                            <a href="#" style="color: var(--text-muted);"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" style="color: var(--text-muted);"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#" style="color: var(--text-muted);"><i class="fa-brands fa-twitter"></i></a>
-                        </div>
+                        <a href="#contact" class="btn btn-primary">TALK TO A SPECIALIST NOW <i
+                                data-lucide="arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-canvas">
-                        <div class="hero-img-box">
-                            <img src="profile.png" alt="Lavanya K">
-                        </div>
-                    </div>
+                <div class="hero-image reveal-hidden">
+                    <img src="profile.png" alt="Lavanya K">
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="about section">
+        <section id="about" class="section brand-showcase reveal-hidden">
             <div class="container grid">
-                <div class="about-img-container">
-                    <img src="about.png" alt="Developer Professional Pose">
+                <div class="big-logo-container">
+                    <img src="profile.png" alt="Student Profile" class="about-profile-img">
                 </div>
-                <div class="about-content">
-                    <span class="tagline">About Us</span>
-                    <h2>I AM AVAILABLE FOR <span style="color: var(--primary);">WEB</span> PROJECTS</h2>
-                    <p style="margin-bottom: 2rem;">I am a highly motivated Bachelor of Computer Applications (BCA)
-                        student at Sri Ram College of Arts and Science. My passion for technology drives me to create
-                        efficient and scalable software solutions that solve real-world problems.</p>
+                <div class="brand-content">
+                    <div class="section-header-left">
+                        <span class="hero-subtitle">ABOUT</span>
+                        <h2>Digital excellence with<br>a focus on <span>real solutions</span></h2>
+                    </div>
+                    <p>I am a highly motivated Bachelor of Computer Applications (BCA) student at Sri Ram College of
+                        Arts and Science. My passion for technology drives me to create efficient, scalable, and
+                        user-centric software solutions that solve real-world challenges through clean code and
+                        innovative design.</p>
 
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3>77%</h3>
-                            <p>Academic Score</p>
+                    <strong>Extensive experience in Web Development and UI Design, with a focus on creating interfaces
+                        that convert and engage.</strong>
+
+                    <p>My mission is to ensure that each project is handled with clarity, dedication, and a focus on
+                        effectively solving your problem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Expertise Section (Skills) -->
+        <section id="skills" class="section expertise">
+            <div class="container">
+                <div class="section-header reveal-hidden text-center">
+                    <span class="hero-subtitle">TECHNICAL EXPERTISE</span>
+                    <h2>My <span>Core</span> Skills</h2>
+                </div>
+
+                <div class="expertise-grid grid">
+                    <div class="expertise-category reveal-hidden">
+                        <div class="category-title">
+                            <i data-lucide="layout"></i>
+                            <h3>Frontend</h3>
                         </div>
-                        <div class="stat-item">
-                            <h3>100%</h3>
-                            <p>Dedication</p>
-                        </div>
+                        <ul class="skill-list">
+                            <li><i data-lucide="check" class="check"></i> HTML5 & CSS3</li>
+                            <li><i data-lucide="check" class="check"></i> JavaScript (ES6+)</li>
+                            <li><i data-lucide="check" class="check"></i> React.js</li>
+                            <li><i data-lucide="check" class="check"></i> Responsive Design</li>
+                        </ul>
                     </div>
 
-                    <a href="#contact" class="btn btn-primary" style="margin-top: 3rem;">GET IN TOUCH <i
-                            data-lucide="send"></i></a>
+                    <div class="expertise-category reveal-hidden">
+                        <div class="category-title">
+                            <i data-lucide="database"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><i data-lucide="check" class="check"></i> Java</li>
+                            <li><i data-lucide="check" class="check"></i> Python</li>
+                            <li><i data-lucide="check" class="check"></i> SQL & Databases</li>
+                            <li><i data-lucide="check" class="check"></i> API Integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-category reveal-hidden">
+                        <div class="category-title">
+                            <i data-lucide="pen-tool"></i>
+                            <h3>Design</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><i data-lucide="check" class="check"></i> UI/UX Design</li>
+                            <li><i data-lucide="check" class="check"></i> Figma</li>
+                            <li><i data-lucide="check" class="check"></i> Adobe Creative Suite</li>
+                            <li><i data-lucide="check" class="check"></i> Prototyping</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-category reveal-hidden">
+                        <div class="category-title">
+                            <i data-lucide="settings"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><i data-lucide="check" class="check"></i> Git & GitHub</li>
+                            <li><i data-lucide="check" class="check"></i> VS Code</li>
+                            <li><i data-lucide="check" class="check"></i> NPM & Build Tools</li>
+                            <li><i data-lucide="check" class="check"></i> Command Line</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Resume Section -->
-        <section id="resume" class="resume section">
+        <section id="resume" class="section resume">
             <div class="container">
-                <div class="section-header text-center">
-                    <span class="tagline">My Qualifications</span>
-                    <h2>PROFESSIONAL <span style="color: var(--primary);">RESUME</span></h2>
+                <div class="section-header reveal-hidden text-center">
+                    <span class="hero-subtitle">RESUME</span>
+                    <h2>Professional <span>Resume</span></h2>
                 </div>
-
-                <div class="resume-paper glass-card">
+                <div class="resume-paper">
                     <div class="resume-grid grid">
                         <!-- Education -->
-                        <div class="resume-col">
-                            <div class="resume-title flex">
+                        <div class="resume-col reveal-hidden">
+                            <div class="resume-title">
                                 <i data-lucide="graduation-cap"></i>
                                 <h3>Education</h3>
                             </div>
@@ -129,21 +181,21 @@
                                 <div class="resume-item">
                                     <span class="resume-date">2023 - 2026</span>
                                     <h4>Bachelor of Computer Applications</h4>
-                                    <p class="resume-institution">Sri Ram College of Arts and Science</p>
+                                    <span class="resume-institution">Sri Ram College of Arts and Science</span>
                                     <p>Focused on practical software engineering and database logic.</p>
                                 </div>
                                 <div class="resume-item">
                                     <span class="resume-date">2021 - 2023</span>
                                     <h4>Higher Secondary Certificate</h4>
-                                    <p class="resume-institution">St. Joseph's Higher Secondary School</p>
+                                    <span class="resume-institution">St. Joseph's Higher Secondary School</span>
                                     <p>Computer Science major with high academic achievement.</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Experience -->
-                        <div class="resume-col">
-                            <div class="resume-title flex">
+                        <div class="resume-col reveal-hidden">
+                            <div class="resume-title">
                                 <i data-lucide="briefcase"></i>
                                 <h3>Experience</h3>
                             </div>
@@ -151,13 +203,13 @@
                                 <div class="resume-item">
                                     <span class="resume-date">2025 - Present</span>
                                     <h4>Web Developer Intern</h4>
-                                    <p class="resume-institution">Creative Tech Solutions</p>
+                                    <span class="resume-institution">Creative Tech Solutions</span>
                                     <p>Building scalable UI components and optimizing web workflows.</p>
                                 </div>
                                 <div class="resume-item">
                                     <span class="resume-date">2024 - Present</span>
                                     <h4>Freelance UI Designer</h4>
-                                    <p class="resume-institution">Self-Employed</p>
+                                    <span class="resume-institution">Self-Employed</span>
                                     <p>Creating user-centric digital products for diverse clients.</p>
                                 </div>
                             </div>
@@ -168,15 +220,15 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects section">
+        <section id="projects" class="section projects">
             <div class="container">
-                <div class="section-header">
-                    <span class="tagline">My Work</span>
-                    <h2>RECENT PROJECT</h2>
+                <div class="section-header reveal-hidden text-center">
+                    <span class="hero-subtitle">PROJECTS</span>
+                    <h2>Recent <span>Featured</span> Work</h2>
                 </div>
 
                 <div class="grid project-grid">
-                    <div class="glass-card project-card">
+                    <div class="project-card reveal-hidden">
                         <div class="project-img">
                             <img src="chatbot.png" alt="User Management">
                         </div>
@@ -192,111 +244,67 @@
             </div>
         </section>
 
-        <!-- Services/Skills Section -->
-        <section id="services" class="services section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="tagline">Services & Skills</span>
-                    <h2>DESIGN <span style="color: var(--primary);">SERVICES</span> I AM PROVIDING</h2>
-                </div>
-
-                <div class="skills-grid grid">
-                    <div class="glass-card skill-card">
-                        <div class="skill-icon"><i data-lucide="layout"></i></div>
-                        <h3>Web Development</h3>
-                        <p>Building responsive, modular, and performant web applications using HTML, CSS, and JS.</p>
-                    </div>
-
-                    <div class="glass-card skill-card">
-                        <div class="skill-icon"><i data-lucide="monitor"></i></div>
-                        <h3>UI/UX Design</h3>
-                        <p>Creating intuitive and visually stunning user interfaces with a focus on accessibility.</p>
-                    </div>
-
-                    <div class="glass-card skill-card">
-                        <div class="skill-icon"><i data-lucide="database"></i></div>
-                        <h3>Database Logic</h3>
-                        <p>Designing efficient SQL schemas and managing data storage for complex applications.</p>
-                    </div>
-
-                    <div class="glass-card skill-card">
-                        <div class="skill-icon"><i data-lucide="cpu"></i></div>
-                        <h3>Core Programming</h3>
-                        <p>Strong foundation in Java and Python for backend and algorithmic problem solving.</p>
-                    </div>
-
-                    <div class="glass-card skill-card">
-                        <div class="skill-icon"><i data-lucide="users"></i></div>
-                        <h3>Soft Skills</h3>
-                        <p>Excellent communication, teamwork, and adaptability in collaborative environments.</p>
-                    </div>
-
-                    <div class="glass-card skill-card">
-                        <div class="skill-icon"><i data-lucide="award"></i></div>
-                        <h3>Academic Projects</h3>
-                        <p>Consistent record of successful project submissions mirroring industry standards.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Contact Section -->
-        <section id="contact" class="contact section">
+        <section id="contact" class="section contact">
             <div class="container">
-                <div class="section-header text-center">
-                    <span class="tagline">Connect</span>
-                    <h2>LET'S TALK ABOUT YOUR PROJECT</h2>
-                </div>
+                <div class="contact-redesign reveal-hidden">
+                    <div class="contact-header">
+                        <span class="hero-subtitle">CONTACT</span>
+                        <h2>Let's <span>Work</span> Together</h2>
+                        <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of
+                            your visions.</p>
+                    </div>
 
-                <div class="contact-container grid">
-                    <div class="contact-info">
-                        <div class="glass-card">
-                            <div class="contact-item">
-                                <h4>EMAIL ME</h4>
-                                <p>lavanya0167@gmail.com</p>
+                    <div class="contact-grid-new">
+                        <div class="contact-details-new">
+                            <div class="detail-box">
+                                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                                <div class="detail-text">
+                                    <h4>Email Me</h4>
+                                    <p>lavanya0167@gmail.com</p>
+                                </div>
                             </div>
-                            <div class="contact-item">
-                                <h4>CALL ME</h4>
-                                <p>+91 7338952167</p>
+                            <div class="detail-box">
+                                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                                <div class="detail-text">
+                                    <h4>Call Me</h4>
+                                    <p>+91 7338952167</p>
+                                </div>
                             </div>
-                            <div class="contact-item">
-                                <h4>LOCATION</h4>
-                                <p>Chennai, India</p>
+                            <div class="detail-box">
+                                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                                <div class="detail-text">
+                                    <h4>Location</h4>
+                                    <p>Chennai, India</p>
+                                </div>
                             </div>
-                            <div class="social-links flex" style="margin-top: 3rem;">
-                                <a href="#" class="btn btn-secondary" style="padding: 0.8rem;"><i
-                                        class="fa-brands fa-github"></i></a>
-                                <a href="#" class="btn btn-secondary" style="padding: 0.8rem;"><i
-                                        class="fa-brands fa-linkedin"></i></a>
-                                <a href="#" class="btn btn-secondary" style="padding: 0.8rem;"><i
-                                        class="fa-brands fa-twitter"></i></a>
+                            <div class="social-circles">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="contact-form glass-card">
-                        <form action="#">
-                            <div class="grid contact-form-grid">
-                                <div class="form-group">
-                                    <label>YOUR NAME</label>
-                                    <input type="text" placeholder="John Doe" required>
+                        <div class="contact-form-new">
+                            <form action="#" id="portfolio-contact">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Your Email" required>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label>YOUR EMAIL</label>
-                                    <input type="email" placeholder="john@example.com" required>
+                                    <input type="text" placeholder="Subject" required>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label>SUBJECT</label>
-                                <input type="text" placeholder="Project Inquiry" required>
-                            </div>
-                            <div class="form-group">
-                                <label>MESSAGE</label>
-                                <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">SEND MESSAGE <i
-                                    data-lucide="send"></i></button>
-                        </form>
+                                <div class="form-group">
+                                    <textarea rows="5" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">SEND MESSAGE <i
+                                        data-lucide="send"></i></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,14 +312,19 @@
     </main>
 
     <footer class="footer">
-        <div class="container flex" style="justify-content: center; text-align: center;">
-            <p>&copy; 2026. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-bottom flex">
+                <p>&copy; 2026. All rights reserved.</p>
+                <div class="social-top">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        // Refresh Lucide Icons manually for runtime elements if needed
         lucide.createIcons();
     </script>
 </body>

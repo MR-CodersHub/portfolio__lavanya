@@ -26,9 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const navLinksList = document.querySelector('.nav-links');
                 if (navLinksList.classList.contains('mobile-active')) {
                     navLinksList.classList.remove('mobile-active');
-                    const icon = document.querySelector('#mobile-toggle i');
-                    icon.setAttribute('data-lucide', 'menu');
-                    lucide.createIcons();
+                    const icon = document.querySelector('#mobile-toggle i, #mobile-toggle svg');
+                    if (icon) {
+                        icon.setAttribute('data-lucide', 'menu');
+                        lucide.createIcons();
+                    }
                 }
             }
         });
@@ -139,7 +141,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.section, .glass-container, .project-card, .skill-category, .stat-card').forEach(el => {
+    // Select all elements that should reveal
+    const revealSelectors = '.section, .project-card, .service-card, .hero-content, .hero-image, .brand-showcase, .resume-col, .contact-redesign, .reveal-hidden';
+    document.querySelectorAll(revealSelectors).forEach(el => {
         el.classList.add('reveal-hidden');
         revealObserver.observe(el);
     });
@@ -167,13 +171,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileToggle && navLinksList) {
         mobileToggle.addEventListener('click', () => {
             navLinksList.classList.toggle('mobile-active');
-            const icon = mobileToggle.querySelector('i');
-            if (navLinksList.classList.contains('mobile-active')) {
-                icon.setAttribute('data-lucide', 'x');
-            } else {
-                icon.setAttribute('data-lucide', 'menu');
+            const icon = mobileToggle.querySelector('i, svg');
+            if (icon) {
+                if (navLinksList.classList.contains('mobile-active')) {
+                    icon.setAttribute('data-lucide', 'x');
+                } else {
+                    icon.setAttribute('data-lucide', 'menu');
+                }
+                lucide.createIcons();
             }
-            lucide.createIcons();
         });
     }
 
@@ -197,33 +203,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-// Animation Classes Injection
-const styleScroll = document.createElement('style');
-styleScroll.textContent = `
-    .reveal-hidden {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .animate-reveal {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .nav-links a.active {
-        color: var(--primary) !important;
-    }
-    .nav-links a.active::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: var(--primary);
-        margin-top: 4px;
-        border-radius: 2px;
-    }
-`;
-document.head.appendChild(styleScroll);
 
 // Initialize Icons Globally
 lucide.createIcons();
